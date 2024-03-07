@@ -1,0 +1,112 @@
+/* Universal Selector */
+
+*{
+    background-color: antiquewhite;
+    color: white;
+}
+
+/* selector by tag name  */
+
+h1{
+    background-color: navajowhite;
+    color: black;
+    text-align: center;
+}
+
+p{
+    color: black;
+}
+
+
+/* selector by class name  */
+
+.box{
+    background-color: navy;
+}
+
+/* selector by id  */
+
+#box2{
+    background-color: green;
+}
+
+
+
+
+/* COLORS in CSS  */
+
+#box4{
+    background: linear-gradient(black, green);
+}
+#box5{
+    background: radial-gradient(black, green);
+}
+
+/* border in css  with border radius*/
+
+.border{
+    border: 2px solid black ;
+    text-align: left;
+    border-radius: 50px;
+}
+
+/* margin in CSS  */
+
+.margin{
+    border: 2px solid green;
+    color: blue;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    /* margin: 40px 20px 20px 40px;  */
+}
+
+/* padding in CSS  */
+
+.padding{
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    /* padding: 40px 20px 20px 40px; */
+}
+
+/* outline in css  */
+
+.outline{
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: yellow;
+    /* outline: 2px solid red; */
+}
+
+/* height and width in CSS  */
+
+.height, .width{
+    height: 75vh;
+    width: 60vw;
+    border: 3px solid black;
+    margin: 10px;
+    background-color: navy;}
+
+div{
+    padding-bottom:10px;
+    border-bottom: 4px solid black;
+}
+
+/* text properties  */
+
+#text1{
+    text-decoration: none;
+    text-transform: capitalise;
+    text-shadow: 2px solid black;
+    text-align: center;
+}
+
+
+#text2{
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: left;
+}
