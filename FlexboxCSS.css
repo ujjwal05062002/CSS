@@ -1,0 +1,73 @@
+/*
+1. FlexBox : Flexible + Box.
+2. Flexbox is makes it easier to align the items within a container.
+3. It is direction agnostic.
+*/
+
+.flex-items{
+    background-color: navy;
+    border: 2px solid black;
+    color: white;
+    margin: 4px;
+    height: 120px;
+    width: 120px;
+}
+
+.flex-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    border: 2px solid green;
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+
+    /* flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    flex-wrap: nowrap; */
+
+    /* justify-content: center;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly; */
+
+
+    /* align-items: center;
+    align-items: start;
+    align-items: stretch; */
+}
+
+
+/*
+**********************Conclusion ********************************
+1. To make a container flex we have to set its display to flex.
+2. After setting it to flex following properties can be added to a flex container.
+    1. Flex-direction: sets the direction in which the items are arranged. There are 
+                       four possible direction which can be provided to the flex direction property.
+                        1. Row
+                        2. Row-reverse
+                        3. Column
+                        4. Column-reverse
+    2. Flex-wrap: Wraps helps in making the webpage responsive. By arranging them in 
+                  next line whenever required. These three possible value can be passed to the flex wrap property.
+                        1. Wrap
+                        2. NoWrap
+                        3. Wrap-Reverse
+    3. Justify-content : It aligns the flex items. Following 5 arrangement can be 
+                        passed.
+                        1. Center (Most Used)
+                        2. Flex-start
+                        3. Flex-end
+                        4. Space-between
+                        5. Space-around
+    4. Align-Items : It aligns the flex items.
+                        1. Center
+                        2. Flex-start
+                        3. Flex-end
+                        4. Strech
+                        5. Baseline
+
+*/
