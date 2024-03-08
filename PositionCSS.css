@@ -1,0 +1,66 @@
+.box{
+    background-color: navy;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+}
+
+#box1{
+    /* 
+    1. Static position is the byt default positoin of the webpage
+    2. Top, Bottom, Left and Right properties does not affect the element.
+    */
+    position: static; 
+}
+
+#box2{
+    /*
+    Properties : 
+    1. It is the relative positiom of the element with respect to its initial position.
+    2. It accepts the left, right, top and bottom properties.
+    3. Other elements of the webpage will not be affected by the current position of the relative position holding element.
+    */
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+
+
+#box3{
+    position: absolute;
+    top: 40px;
+    /*
+    1. Element is positioned with the respect to the positon of its first(nearest positoined) parent.
+    2. In case, that there is no nearest positoned element then the element holding the absolute position will move along the scrolling of the webpage.
+    3. In that case element will be removed completely from the normal flow and will overlap other elements.
+    4. Absolute position will accept the top, bottom, left and right position.
+    */
+}
+
+#box4{
+    position: fixed;
+    /*
+    1. Element is position with respect to the viewport which means that it always remains in the same position even if the page is scrolled.
+    2. Top, Bottom, Left and Right properties can be used in the fixed position.
+    3. In that case element is completley removed from the normal flow of the webpage and will overlap other elements.
+    */ 
+    right: 400px;
+    bottom: 1px;
+}
+
+#box5{
+    position: sticky;
+    /*
+    1. Element is placed on the basis of the user's scrolling.
+    2. An element with sticky position lies between the relative and fixed position based on the user's scrolling.
+    3. Element is positioned relative untill a specific position in the viewport is met. Then it sticks in the position just liked the fixed.
+    4. Top, Bottom, Left and Right position can also be used.
+    */
+    top : 50px;
+    width: 100%;
+}
+
+
