@@ -1,0 +1,75 @@
+<!-- position absolute  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute</title>
+    <style>
+        *{
+            margin: 0;
+        }
+
+        .main{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: antiquewhite;
+        }
+
+        .center{
+            height: 70%;
+            width: 70%;
+            background-color: azure;
+            position: relative;
+        }
+
+        .center img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .btn{
+            position: absolute;
+            top: 50%;
+        } 
+
+        #btn1{
+            left: 10px;
+        }
+
+        #btn2{
+            right: 10px;
+        } 
+
+        .center h2{
+            position: absolute;
+            top: 10px;
+            background-color: white;
+            padding: 10px;
+            left: 30%;
+        }
+
+        .center p{
+            background-color: blue;
+            color: white;
+            position: absolute;
+            bottom: 10px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="center">
+            <img src="/img2.jpg" alt="this is an image">
+            <button class="btn" id="btn1">previous</button>
+            <button class="btn" id="btn2">next</button>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab modi repudiandae voluptatum numquam! Amet incidunt saepe, suscipit autem necessitatibus nisi, commodi iusto veritatis velit consequuntur et eveniet id voluptatum fuga fugiat consectetur eius quis modi ab vero delectus mollitia nobis. Distinctio aliquam, officiis ipsa necessitatibus iste quasi, quis odio neque vitae consequuntur odit quod, reiciendis animi dolor nulla? Quidem, neque?</p>
+        </div>
+    </div>
+</body>
+</html>
