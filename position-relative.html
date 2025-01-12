@@ -1,0 +1,69 @@
+<!-- positions   
+        1. Static
+        2. Relative
+        3. Absolute
+        4. Fixed
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      .main {
+        width: 100vw;
+        height: 100vh;
+        background-color: aquamarine;
+        display: grid;
+        place-items: center;
+      }
+      .center {
+        width: 80%;
+        height: 80%;
+        background-color: antiquewhite;
+      }
+      .box {
+        height: 100px;
+        width: 100px;
+        display: inline-block;
+        color: white;
+      }
+      #box1{
+        background-color: green;
+      }
+      #box2{
+        background-color: navy;
+        position: relative;
+        z-index: 2;
+      }
+      #box3{
+        background-color: red;
+        position: relative;
+        top: 50px;
+        right: 50px;
+      }
+      #box4{
+        background-color: purple;
+      }
+      #box5{
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="center">
+        <div class="box" id="box1">Box1</div>
+        <div class="box" id="box2">Box2</div>
+        <div class="box" id="box3">Box3</div>
+        <div class="box" id="box4">Box4</div>
+        <div class="box" id="box5">Box5</div>
+      </div>
+    </div>
+  </body>
+</html>
